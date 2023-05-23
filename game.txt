@@ -109,6 +109,7 @@ Upgrades
     *tripleboop
         name:Triple Boop
         desc:Unlock the power of booping with two fingers on one hand and one finger on the other.<//><b>Effect:</b><.>+1 HP per boop
+        icon:icons[1,0]
         passive:increase hp yield of haileyButton by 1
         cost:150 hp
         req:have doubleboop
@@ -116,6 +117,7 @@ Upgrades
     *quadboop
         name:Quadboople
         desc:That's two boops per hand now!<//><b>Effect:</b><.>+1 HP per boop
+        icon:icons[2,0]
         passive:increase hp yield of haileyButton by 1
         cost:200 hp
         req:have doubleboop
@@ -124,6 +126,7 @@ Upgrades
     *boopcrits
         name:Critical boops
         desc:Every now and then, a boop makes you feel slightly fuzzier on the inside than usual.<//><b>Effect:</b><.>+1% chance of a critical boop<.>Critical boops are worth double.
+        icon:icons[3,0]
         cost:250 hp
         req:have doubleboop
         req:have tripleboop
