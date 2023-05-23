@@ -99,7 +99,9 @@ Achievements
     *goldenFidget
         name:Now aren't you patient
         desc:Find and obtain the <b>Golden Fidget Toy</b>.
-        passive:hide gfidget
+        on earn:
+            hide gfidget
+            toast Hey, you found it!
         req:1 gfidget
 
 	*haileyChievo1
