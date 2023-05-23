@@ -113,7 +113,9 @@ Upgrades
     *boopcrits
         name:Critical boops
         desc:Every now and then, a boop makes you feel slightly fuzzier on the inside than usual.<//><b>Effect:</b><.>+1% chance of a critical boop<.>Critical boops are worth double.
-
+        cost:1000 hp
+        req:have doubleboop
+        req:have tripleboop
     *stimmies
         name:Stimmies
         desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy output x1.5
