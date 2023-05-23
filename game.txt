@@ -92,28 +92,28 @@ Upgrades
         name:Double Boop
         desc:Why settle for one at a time?<//><b>Effect:</b><.>+1 HP per boop
         passive:increase hp yield of haileyButton by 1
-        cost:250 hp
-        req:100 hp
+        cost:100 hp
+        req:50 hp
 
     *tripleboop
         name:Triple Boop
         desc:Unlock the power of booping with two fingers on one hand and one finger on the other.<//><b>Effect:</b><.>+1 HP per boop
         passive:increase hp yield of haileyButton by 1
-        cost:250 hp
+        cost:150 hp
         req:have doubleboop
     
     *quadboop
         name:Quadboople
         desc:That's two boops per hand now!<//><b>Effect:</b><.>+1 HP per boop
         passive:increase hp yield of haileyButton by 1
-        cost:250 hp
+        cost:200 hp
         req:have doubleboop
         req:have tripleboop
     
     *boopcrits
         name:Critical boops
         desc:Every now and then, a boop makes you feel slightly fuzzier on the inside than usual.<//><b>Effect:</b><.>+1% chance of a critical boop<.>Critical boops are worth double.
-        cost:500 hp
+        cost:250 hp
         req:have doubleboop
         req:have tripleboop
 
@@ -121,38 +121,37 @@ Upgrades
         name:Stimmies
         desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy output x1.5
         passive:multiply yield of fidgets by 1.5
-        cost:250 hp
+        cost:200 hp
         req:10 fidgets
 
     *betterdrawing
         name:Better pencils
         desc:A better set of pencils allows you to draw easier and better.<//><b>Effect:</b><.>Drawing output x1.5
         passive:multiply yield of drawings by 1.5
-        cost:250 hp
-        req:have stimmies
+        cost:200 hp
         req:1 drawing
 
     *evenbetterdrawing
         name:Better pencils
         desc:A better set of pencils allows you to draw easier and better.<//><b>Effect:</b><.>Drawing output x2
         passive:multiply yield of drawings by 2
-        cost:500 hp
-        req:have stimmies
+        cost:250 hp
+        req:have betterdrawing
 
-    
+    *
 
     *internet
         name:Internet
         desc:Connect to the internet.<//><b>Effect:</b><.>Unlocks new upgrades
         on earn:toast Internet related upgrades have been unlocked!
-        cost:1000 hp
+        cost:500 hp
         req:10 hp per second
         req:1 gaming
 
     *steam
         name:Steam
         desc:A game platform full of fun games!<//><b>Effect:</b><.>Unlocks new upgrades
-        cost:10000 hp
+        cost:1000 hp
         req:1 gaming
         req:have internet
 
@@ -181,15 +180,20 @@ Achievements
 	*haileyChievo1
 		name::haileyboop:
 		desc:Boop <b>Hailey</b> for the first time.
-		req:1 hp
+		req:1 hp earned
 
     *haileyChievo100
 		name:ale!
 		desc:Gain <b>100</b> Hailey Points.
-		req:100 hp
+		req:100 hp earned
 
     *gamingtime
         name:Gaming time...almost
         desc:Obtainn the <b>Gaming</b> activity. Now all you need is games!
         on earn:toast Oh right, you need games to play. Better connect to the internet and download some!
         req:1 gaming
+
+    *wowinternet
+        name:Welcome to the internet!
+        desc:Unlock the Internet. It's all uphill from here.
+        on earn:toast <b>Internet unlocked!</b><//>
