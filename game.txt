@@ -47,7 +47,7 @@ Resources
 	*haileypoints|hp
 		name:Hailey Points|HP
 		desc:No, this isn't your health. Hailey Points are gained through booping Hailey or passively through activities.
-		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hp%20icon.png?raw=true
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hp.png?raw=true
 		class:noBackground
 		show earned
 
