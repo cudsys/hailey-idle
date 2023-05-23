@@ -53,62 +53,112 @@ Resources
 Buildings
     *TEMPLATE
 		on click:anim glow
-		
-	*fidgettoy|fidgets
-		name:Fidget toy|Fidget toys
-		desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.
-		cost:15 hp
-		on tick:yield 0.1 hp
-		req:1 hp
-    *gfidget
-		name:Golden Fidget toy
-		desc:A colourful fidget toy made of gold.
-		cost:100 hp
-		on tick:yield 1 hp
-		req:100 hp
-        req:0 fidgets
+
+    /*
+        *gfidget
+            name:Golden Fidget toy
+            desc:A colourful fidget toy made of gold.
+            cost:100 hp
+            on tick:yield 1 hp
+            // req:0 fidgets
+            req:100 hp
+	*/
+
+    *fidgettoy|fidgets
+        name:Fidget toy|Fidget toys
+        desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.
+        cost:15 hp
+        on tick:yield 0.1 hp
+        req:1 hp
 
     *drawing|drawings
 		name:Drawing
-		desc:Drawing pictures is fun, especially when you know what you want to draw
+		desc:Drawing pictures is fun, especially when you know what you want to draw.
 		cost:100 hp
 		on tick:yield 0.5 hp
         req:0.5 hp per second
+
+    *gaming/gamings
+        name:Gaming
+        desc:Video games are a GREAT source of fun.
+        cost:2500 hp
+        on tick:yield 0 hp
+        req:1000 hp:earned
 
 
 Upgrades
     *doubleboop
         name:Double Boop
-        desc:Why settle for one at a time?
-        passive:multiply yield of haileyButton by 2
+        desc:Why settle for one at a time?<//><b>Effect:</b><.>+1 HP per boop
+        passive:increase hp yield of haileyButton by 1
         cost:250 hp
         req:100 hp
+
     *stimmies
         name:Stimmies
-        desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy production x1.5<.>
+        desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy output x1.5
         passive:multiply yield of fidgets by 1.5
         cost:1000 hp
         req:10 fidgets
+
+    *betterdrawing
+        name:Better pencils
+        desc:A better set of pencils allows you to draw easier and better.<//><b>Effect:</b><.>Drawing output x1.5
+        passive:multiply yield of drawings by 1.5
+        cost:2500 hp
+        req:have stimmies
+
+    
+
+    *internet
+        name:Internet
+        desc:Connect to the internet.<//><b>Effect:</b><.>Unlocks new upgrades
+        on earn:toast Internet related upgrades have been unlocked!
+        cost:10000 hp
+        req:10 hp per second
+        req:1 gaming
+
+    *steam
+        name:Steam
+        desc:A game platform full of fun games!<//><b>Effect:</b><.>Unlocks new upgrades
+        cost:10000 hp
+        req:1 gaming
+        req:have internet
+
+    *dtdm2
+        Name:Dream Team Deathmatch 2
+        desc:A free class-based first person shooter with an active queer community.
+        cost:15000 hp
+        req:1 gaming
+        req:have internet
+        req:have steam
 
 
 
 Achievements
 	*TEMPLATE
 		on click:anim glow
-		
-    *goldenFidget
-        name:Now aren't you patient
-        desc:Find and obtain the <b>Golden Fidget Toy</b>.
-        on earn:hide gfidget
-        on earn:toast Hey, you found it!
-        req:1 gfidget
+	/*	
+        *goldenFidget
+            name:Now aren't you patient
+            desc:Find and obtain the <b>Golden Fidget Toy</b>.
+            on earn:hide gfidget
+            on earn:toast Hey, you found it!
+            req:1 gfidget
+    */
 
 	*haileyChievo1
 		name::haileyboop:
 		desc:Boop <b>Hailey</b> for the first time.
 		req:1 hp
-        
+
     *haileyChievo100
 		name:ale!
 		desc:Gain <b>100</b> Hailey Points.
 		req:100 hp
+
+    *gamingtime
+        name:Gaming time...almost
+        desc:Obtainn the <b>Gaming</b> activity. Now all you need is games!
+        on earn:toast Oh right, you need games to play. Better connect to the internet and download some!
+        req:1 gaming
