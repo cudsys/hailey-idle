@@ -66,21 +66,21 @@ Buildings
 
     *fidgettoy|fidgets
         name:Fidget toy|Fidget toys
-        desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.
+        desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.<//><b>Effect:</b><.>+0.1 HP per second
         cost:15 hp
         on tick:yield 0.1 hp
         req:1 hp
 
     *drawing|drawings
 		name:Drawing
-		desc:Drawing pictures is fun, especially when you know what you want to draw.
+		desc:Drawing pictures is fun, especially when you know what you want to draw.<//><b>Effect:</b><.>+0.5 HP per second
 		cost:100 hp
 		on tick:yield 0.5 hp
         req:0.5 hp per second
 
-    *gaming
+    *gaming|gamings
         name:Gaming
-        desc:Video games are a GREAT source of fun.
+        desc:Video games are a GREAT source of fun.<//><b>Effect:</b><.>+1 HP per second (per game owned)
         cost:2500 hp
         on tick:yield 0 hp
         req:1000 hp:earned
