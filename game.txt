@@ -94,7 +94,7 @@ Buildings
         cost:500 hp
         on tick:yield 0 hp
         req:1000 hp:earned
-        building cost increase:130%
+        cost increase:130%
 
 
 Upgrades
