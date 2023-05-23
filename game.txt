@@ -99,10 +99,8 @@ Achievements
     *goldenFidget
         name:Now aren't you patient
         desc:Find and obtain the <b>Golden Fidget Toy</b>.
-        on earn:
-            hide gfidget
-            toast Hey, you found it!
-        end
+        on earn:hide gfidget
+        on earn:toast Hey, you found it!
         req:1 gfidget
 
 	*haileyChievo1
