@@ -35,6 +35,7 @@ Buttons
 		desc:Click on Hailey to boop her!
 		on click:anim wobble
 		on click:yield 1 hp
+        on click:if (have boopcrits and chance(1%)) yield 1 hp
 		icon:https://github.com/cudsys/hailey-idle/blob/main/img/haileyb.png?raw=true
 		no text
 		class:bigButton hasFlares
@@ -93,6 +94,25 @@ Upgrades
         passive:increase hp yield of haileyButton by 1
         cost:250 hp
         req:100 hp
+
+    *tripleboop
+        name:Triple Boop
+        desc:Unlock the power of booping with two fingers on one hand and one finger on the other.<//><b>Effect:</b><.>+1 HP per boop
+        passive:increase hp yield of haileyButton by 1
+        cost:500 hp
+        req:have doubleboop
+    
+    *quadboop
+        name:Quadboople
+        desc:That's two boops per hand now!<//><b>Effect:</b><.>+1 HP per boop
+        passive:increase hp yield of haileyButton by 1
+        cost:750 hp
+        req:have doubleboop
+        req:have tripleboop
+    
+    *boopcrits
+        name:Critical boops
+        desc:Every now and then, a boop makes you feel slightly fuzzier on the inside than usual.<//><b>Effect:</b><.>+1% chance of a critical boop<.>Critical boops are worth double.
 
     *stimmies
         name:Stimmies
