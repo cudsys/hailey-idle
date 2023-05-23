@@ -102,6 +102,7 @@ Achievements
         on earn:
             hide gfidget
             toast Hey, you found it!
+        end
         req:1 gfidget
 
 	*haileyChievo1
