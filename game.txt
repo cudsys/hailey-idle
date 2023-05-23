@@ -8,6 +8,7 @@ Settings
 	building cost increase:115%
 	building cost refund:50%
 	stylesheet:stuff/bigBlue.css
+    spritesheet:icons, 48 by 48, https://github.com/cudsys/hailey-idle/blob/main/img/icons.png?raw=true
 
 Layout
     *main
@@ -93,12 +94,14 @@ Buildings
         cost:500 hp
         on tick:yield 0 hp
         req:1000 hp:earned
+        building cost increase:130%
 
 
 Upgrades
     *doubleboop
         name:Double Boop
         desc:Why settle for one at a time?<//><b>Effect:</b><.>+1 HP per boop
+        icon:icons[0,0]
         passive:increase hp yield of haileyButton by 1
         cost:100 hp
         req:50 hp
@@ -219,3 +222,4 @@ Achievements
         name:Welcome to the internet!
         desc:Unlock the Internet. It's all uphill from here.
         on earn:toast <b>Internet unlocked!</b><//>
+        req:have internet
