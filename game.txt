@@ -61,12 +61,22 @@ Buildings
 		on tick:yield 0.1 hp
 		req:1 hp
 
+    *drawing|drawings
+		name:Drawing
+		desc:Drawing pictures is fun, especially when you know what you want to draw
+		cost:100 hp
+		on tick:yield 0.5 hp
+		req:250 hp
+        req:2.5 hp per second
+
+
 Upgrades
     *doubleboop
         name:Double Boop
         desc:Why settle for one at a time?
         passive:multiply yield of haileyButton by 2
         cost:250 hp
+        req:100 hp
 
 
 
