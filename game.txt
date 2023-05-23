@@ -78,7 +78,7 @@ Buildings
 		on tick:yield 0.5 hp
         req:0.5 hp per second
 
-    *gaming|gamings
+    *gaming
         name:Gaming
         desc:Video games are a GREAT source of fun.
         cost:2500 hp
