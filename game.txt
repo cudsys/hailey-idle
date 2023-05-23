@@ -96,12 +96,6 @@ Achievements
 	*TEMPLATE
 		on click:anim glow
 		
-    *goldenFidget
-        name:Now aren't you patient
-        desc:Find and obtain the <b>Golden Fidget Toy</b>.
-        on earn:hide gfidget
-        on earn:toast Hey, you found it!
-        req:1 gfidget
 
 	*haileyChievo1
 		name::haileyboop:
