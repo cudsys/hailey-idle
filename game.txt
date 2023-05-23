@@ -66,8 +66,7 @@ Buildings
 		desc:Drawing pictures is fun, especially when you know what you want to draw
 		cost:100 hp
 		on tick:yield 0.5 hp
-		req:250 hp
-        req:2.5 hp per second
+        req:0.5 hp per second
 
 
 Upgrades
@@ -77,6 +76,12 @@ Upgrades
         passive:multiply yield of haileyButton by 2
         cost:250 hp
         req:100 hp
+    *stimmies
+        name:Stimmies
+        desc:More energy means more fidgeting!
+        passive:multiply yield of fidgets by 1.5
+        cost:1000 hp
+        req:10 fidgets
 
 
 
@@ -90,5 +95,5 @@ Achievements
 		req:1 hp
     *haileyChievo100
 		name:ale!
-		desc:Gain <b>100</b> Hailey Points..
+		desc:Gain <b>100</b> Hailey Points.
 		req:100 hp
