@@ -60,6 +60,13 @@ Buildings
 		cost:15 hp
 		on tick:yield 0.1 hp
 		req:1 hp
+    *gfidget
+		name:Golden Fidget toy|
+		desc:A colourful fidget toy made of gold.
+		cost:100 hp
+		on tick:yield 1 hp
+		req:100 hp
+        req:0 fidgets
 
     *drawing|drawings
 		name:Drawing
@@ -78,7 +85,7 @@ Upgrades
         req:100 hp
     *stimmies
         name:Stimmies
-        desc:More energy means more fidgeting!
+        desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy production x1.5<.>
         passive:multiply yield of fidgets by 1.5
         cost:1000 hp
         req:10 fidgets
@@ -89,6 +96,11 @@ Achievements
 	*TEMPLATE
 		on click:anim glow
 		
+    *goldenFidget
+        name:Now aren't you patient
+        desc:Find and obtain the <b>Golden Fidget Toy</b>.
+        req:1 gfidget
+
 	*haileyChievo1
 		name::haileyboop:
 		desc:Boop <b>Hailey</b> for the first time.
