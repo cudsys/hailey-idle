@@ -7,7 +7,6 @@ Settings
 	background:stuff/meadow.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
 
 Layout
@@ -36,7 +35,7 @@ Buttons
 		desc:Click on Hailey to boop her!
 		on click:anim wobble
 		on click:yield 1 hp
-		icon:https://file.garden/XM9Po9xwREbQVxbS/haileyidle/haileyb.png
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/haileyb.png?raw=true
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
