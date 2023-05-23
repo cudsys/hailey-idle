@@ -138,6 +138,14 @@ Upgrades
         cost:250 hp
         req:have betterdrawing
 
+    *internetdrawing
+        name:Online inspiration
+        desc:Find more inspiration on the <b>Internet</b>.<//><b>Effect:</b><.>Drawing output x2
+        passive:multiply yield of drawings by 2
+        cost:500 hp
+        req:have betterdrawing
+        req:have internet
+
     *internet
         name:Internet
         desc:Connect to the internet.<//><b>Effect:</b><.>Unlocks new upgrades
