@@ -186,12 +186,12 @@ Achievements
 	*haileyChievo1
 		name::haileyboop:
 		desc:Boop <b>Hailey</b> for the first time.
-		req:1 hp earned
+		req:1 hp:earned
 
     *haileyChievo100
 		name:ale!
 		desc:Gain <b>100</b> Hailey Points.
-		req:100 hp earned
+		req:100 hp:earned
 
     *gamingtime
         name:Gaming time...almost
