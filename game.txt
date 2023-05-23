@@ -138,8 +138,6 @@ Upgrades
         cost:250 hp
         req:have betterdrawing
 
-    *
-
     *internet
         name:Internet
         desc:Connect to the internet.<//><b>Effect:</b><.>Unlocks new upgrades
