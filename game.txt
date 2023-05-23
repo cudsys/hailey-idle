@@ -1,0 +1,85 @@
+Let's make a game!
+    name:Hailey Idle
+    by:Hailey
+    desc:Let Hailey live her best life by purchasing activites, upgrades and more!
+    
+Settings
+	background:stuff/meadow.jpg
+	building cost increase:115%
+	building cost refund:50%
+	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	stylesheet:stuff/bigBlue.css
+
+Layout
+    *main
+        contains:res, buttons
+    *res
+        contains:Resources
+        class:fullWidth
+    *buttons
+        contains:Buttons
+    *store
+    contains:buildings, upgrades
+    *buildings
+        contains:BulkDisplay, Buildings
+        header:Activities
+        tooltip origin:left
+    *upgrades
+        contains:Upgrades
+        header:Upgrades
+        costs:hide
+        names:hide
+		
+Buttons
+	*haileyButton
+		name:Hailey
+		desc:Click on Hailey to boop her!
+		on click:anim wobble
+		on click:yield 1 hp
+		icon:https://file.garden/XM9Po9xwREbQVxbS/haileyidle/haileyb.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
+Resources
+	*haileypoints|hp
+		name:Hailey Points|HP
+		desc:No, this isn't your health. Hailey Points are gained through booping Hailey or passively through activities.
+		icon:https://file.garden/XM9Po9xwREbQVxbS/haileyidle/hp%20icon.png
+		class:noBackground
+		show earned
+
+Buildings
+    *TEMPLATE
+		on click:anim glow
+		
+	*fidgettoy|fidgets
+		name:Fidget toy|Fidget toys
+		desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.
+		cost:15 hp
+		on tick:yield 0.1 hp
+		req:1 hp
+
+Upgrades
+    *doubleboop
+        name:Double Boop
+        desc:Why settle for one at a time?
+        passive:multiply yield of haileyButton by 2
+        cost:250 hp
+
+
+
+Achievements
+	*TEMPLATE
+		on click:anim glow
+		
+	*haileyChievo1
+		name::haileyboop:
+		desc:Boop <b>Hailey</b> for the first time.
+		req:1 hp
+    *haileyChievo100
+		name:ale!
+		desc:Gain <b>100</b> Hailey Points..
+		req:100 hp
