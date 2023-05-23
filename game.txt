@@ -47,9 +47,17 @@ Resources
 	*haileypoints|hp
 		name:Hailey Points|HP
 		desc:No, this isn't your health. Hailey Points are gained through booping Hailey or passively through activities.
-		icon:https://file.garden/XM9Po9xwREbQVxbS/haileyidle/hp%20icon.png
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hp%20icon.png?raw=true
 		class:noBackground
 		show earned
+
+    *friendpoints|fp
+		name:Friendship Points|FP
+		desc:<i>Note: this icon is a placeholder only.</i><//><b>FP</b> is slowly gained passively through activities with <b>friends</b>.
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/fp%20placeholder.png?raw=true
+		class:noBackground
+		show earned
+        req:have discord
 
 Buildings
     *TEMPLATE
@@ -82,7 +90,7 @@ Buildings
     *gaming|gamings
         name:Gaming
         desc:Video games are a GREAT source of fun.<//><b>Effect:</b><.>+1 HP per second (per game owned)
-        cost:2500 hp
+        cost:500 hp
         on tick:yield 0 hp
         req:1000 hp:earned
 
@@ -132,7 +140,7 @@ Upgrades
         req:1 drawing
 
     *evenbetterdrawing
-        name:Better pencils
+        name:Even better pencils
         desc:A better set of pencils allows you to draw easier and better.<//><b>Effect:</b><.>Drawing output x2
         passive:multiply yield of drawings by 2
         cost:250 hp
@@ -161,10 +169,18 @@ Upgrades
         req:1 gaming
         req:have internet
 
+    *discord
+        name:Discord
+        desc:A chat application for gamers, gaymers and everyone in between.<//><b>Effect:</b><.>Unlocks new upgrades<.>Unlocks <b>friendship points</b>!
+        cost:2500 hp
+        req:1 gaming
+        req:have internet
+
     *dtdm2
         Name:Dream Team Deathmatch 2
-        desc:A free class-based first person shooter with an active queer community.
+        desc:A free class-based first person shooter with an active queer community.<//><b>Effect:</b><.>+1 Gaming HPpS
         cost:1500 hp
+        passive:increase hp yield of gaming by 1
         req:1 gaming
         req:have internet
         req:have steam
