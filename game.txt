@@ -1,7 +1,7 @@
 Let's make a game!
     name:Hailey Idle
     by:Hailey
-    desc:Let Hailey live her best life by purchasing activites, upgrades and more!
+    desc:<t>Story</t>There really isn't that much in terms of story (or at least not yet anyawy). Just enable Hailey to live her best life by making her do activities and getting upgrades!<//><t>FP</t>Friendship points are the secondary resource in Hailey Idle. Since I don't know where else I can put this info, it'll reside here for now. So, here's what you need to know:<.>FP is essential for progression.<.>Increasing FPpS will include sacrificing HPpS.<.>FP will be spent on something I am yet to implement (mainly due to the fact that I don't know how to implement it). 
     
 Settings
 	background:stuff/meadow.jpg
@@ -37,9 +37,9 @@ Buttons
 		on click:anim wobble
 		on click:yield 1 hp
         on click:if (have boopcrits and chance(1%)) yield 1 hp
-		icon:https://github.com/cudsys/hailey-idle/blob/main/img/haileyb.png?raw=true
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hailey_nod.gif?raw=true
 		no text
-		class:bigButton hasFlares
+		class:bigButton
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
@@ -48,14 +48,14 @@ Resources
 	*haileypoints|hp
 		name:Hailey Points|HP
 		desc:No, this isn't your health. Hailey Points are gained through booping Hailey or passively through activities.
-		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hp.png?raw=true
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hp_new_small.png?raw=true
 		class:noBackground
 		show earned
 
     *friendpoints|fp
 		name:Friendship Points|FP
 		desc:<i>Note: this icon is a placeholder only.</i><//><b>FP</b> is slowly gained passively through activities with <b>friends</b>.
-		icon:https://github.com/cudsys/hailey-idle/blob/main/img/fp%20placeholder.png?raw=true
+		icon:https://github.com/cudsys/hailey-idle/blob/main/img/fp_new.png?raw=true
 		class:noBackground
 		show earned
         req:have discord
@@ -154,9 +154,9 @@ Upgrades
     
     *fingerpencils
         name:Finger-shaped pencils
-        desc:I guess they count as fingers.<//><b>Effect:</b><.>+0.1 HP per boop per Drawing activity.
+        desc:I guess they count as fingers.<//><b>Effect:</b><.>+0.1 HP per boop per <b>Drawing</b> activity.
         passive:increase hp yield of haileyButton by 0.1*drawings
-        cost:500 hp
+        cost:1000 hp
         req:have evenbetterdrawing
 
     *internetdrawing
@@ -190,13 +190,23 @@ Upgrades
         req:have internet
 
     *dtdm2
-        Name:Dream Team Deathmatch 2
+        name:Dream Team Deathmatch 2
         desc:A free class-based first person shooter with an active queer community.<//><b>Effect:</b><.>+1 Gaming HPpS
         cost:1500 hp
         passive:increase hp yield of gaming by 1
         req:1 gaming
         req:have internet
         req:have steam
+
+    *vpr
+        name:Velocity Paradise Retuned
+        desc:A content-packed racing game with editors for tracks and cars. Some people like to called it Viper for short.<//><b>Effect:</b><.>+1 Gaming HPpS <.>+0.1 FPpS
+        cost:3000 hp, 10 fidgets
+        passive:increase hp yield of gaming by 1
+        passive:increase fp yield of discord by 0.1
+        req:have discord
+        req:1 gaming
+        req:have internet
 
 
 
