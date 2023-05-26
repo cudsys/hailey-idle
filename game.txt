@@ -151,6 +151,13 @@ Upgrades
         passive:multiply yield of drawings by 2
         cost:250 hp
         req:have betterdrawing
+    
+    *fingerpencils
+        name:Finger-shaped pencils
+        desc:I guess they count as fingers.<//><b>Effect:</b><.>+0.1 HP per boop per Drawing activity.
+        passive:increase hp yield of haileyButton by 0.1*drawings
+        cost:500 hp
+        req:have evenbetterdrawing
 
     *internetdrawing
         name:Online inspiration
@@ -212,7 +219,7 @@ Achievements
 
     *haileyChievo100
 		name:ale!
-		desc:Gain <b>100</b> Hailey Points.
+		desc:Gain a total <b>100</b> Hailey Points.
 		req:100 hp:earned
 
     *gamingtime
