@@ -250,3 +250,8 @@ Achievements
         desc:Unlock the Internet. It's all uphill from here.
         on earn:toast <b>Internet unlocked!</b><//>
         req:have internet
+
+    *fptime
+        name:@the gang (will probably rename this chievo later)
+        desc: make fp at least 0.1 per sec or something
+        req:0.1 fp per second
