@@ -75,6 +75,7 @@ Buildings
 	*/
 
     *fppsthing
+        hidden
         name:fp thing
         desc:why igm why
         start with:1
