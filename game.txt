@@ -74,6 +74,12 @@ Buildings
             req:100 hp
 	*/
 
+    *fppsthing
+        name:fp thing
+        desc:why igm why
+        start with:1
+        on tick:yield 0 fp
+
     *fidgettoy|fidgets
         name:Fidget toy|Fidget toys
         desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.<//><b>Effect:</b><.>+0.1 HP per second
@@ -203,7 +209,7 @@ Upgrades
         desc:A content-packed racing game with editors for tracks and cars. Some people like to called it Viper for short.<//><b>Effect:</b><.>+1 Gaming HPpS <.>+0.1 FPpS
         cost:3000 hp, 10 fidgets
         passive:increase hp yield of gaming by 1
-        passive:increase fp yield of discord by 0.1
+        passive:increase fp yield of fppsthing by 0.1
         req:have discord
         req:1 gaming
         req:have internet
