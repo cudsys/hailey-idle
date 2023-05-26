@@ -214,6 +214,7 @@ Upgrades
         req:have discord
         req:1 gaming
         req:have internet
+        req:have steam
 
 
 
