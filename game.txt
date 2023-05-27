@@ -36,6 +36,7 @@ Buttons
 		desc:Click on Hailey to boop her!
 		on click:anim wobble
 		on click:yield 1 hp
+        on click:yield 0 fp
         on click:if (have boopcrits and chance(1%)) yield 1 hp
 		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hailey_nod.gif?raw=true
 		no text
@@ -139,8 +140,8 @@ Upgrades
 
     *stimmies
         name:Stimmies
-        desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy output x1.5
-        passive:multiply yield of fidgets by 1.5
+        desc:More energy means more fidgeting!<//><b>Effect:</b><.>Fidget toy output x2
+        passive:multiply yield of fidgets by 2
         cost:200 hp
         req:10 fidgets
 
