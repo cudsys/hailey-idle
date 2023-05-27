@@ -54,7 +54,7 @@ Resources
 
     *friendpoints|fp
 		name:Friendship Points|FP
-		desc:<i>Note: this icon is a placeholder only.</i><//><b>FP</b> is slowly gained passively through activities with <b>friends</b>.
+		desc:<b>FP</b> is slowly gained passively through activities with <b>friends</b>.
 		icon:https://github.com/cudsys/hailey-idle/blob/main/img/fp_new.png?raw=true
 		class:noBackground
 		show earned
@@ -73,13 +73,6 @@ Buildings
             // req:0 fidgets
             req:100 hp
 	*/
-
-    *fppsthing
-        name:fp thing
-        desc:why igm why
-        on tick:yield 0.1 fp
-        always hidden
-
     *fidgettoy|fidgets
         name:Fidget toy|Fidget toys
         desc:A small colourful item that keeps you distracted. It's not a lot, but it's something.<//><b>Effect:</b><.>+0.1 HP per second
@@ -99,7 +92,6 @@ Buildings
         desc:Video games are a GREAT source of fun.<//><b>Effect:</b><.>+1 HP per second (per game owned)
         cost:500 hp
         on tick:yield 0 hp
-        on tick:yield 0 fp
         req:1000 hp:earned
         cost increase:130%
 
