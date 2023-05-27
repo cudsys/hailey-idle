@@ -209,7 +209,7 @@ Upgrades
         desc:A content-packed racing game with editors for tracks and cars. Some people like to called it Viper for short.<//><b>Effect:</b><.>+1 Gaming HPpS <.>+0.1 FPpS
         cost:3000 hp, 10 fidgets
         passive:increase hp yield of gaming by 1
-        on earn:grant 1 fppsthing
+        passive:increase fp yield of haileyButton by 0.1
         req:have discord
         req:1 gaming
         req:have internet
