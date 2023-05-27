@@ -36,7 +36,6 @@ Buttons
 		desc:Click on Hailey to boop her!
 		on click:anim wobble
 		on click:yield 1 hp
-        on click:yield 0 fp
         on click:if (have boopcrits and chance(1%)) yield 1 hp
 		icon:https://github.com/cudsys/hailey-idle/blob/main/img/hailey_nod.gif?raw=true
 		no text
